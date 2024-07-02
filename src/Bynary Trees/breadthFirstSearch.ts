@@ -1,7 +1,7 @@
 import { Queue } from "../Queues/Queue";
 import { TreeNode } from "./TreeNode";
 
-export function levelOrder(root: TreeNode | null): number[][] {
+export function breadthFirstSearch(root: TreeNode | null): number[][] {
   const output: number[][] = [];
   let level = 0;
   const rootsQueue = new Queue<TreeNode>();
