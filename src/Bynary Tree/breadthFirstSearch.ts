@@ -1,10 +1,10 @@
 import { Queue } from "../Queue/Queue";
 import { TreeNode } from "./TreeNode";
 
-export function breadthFirstSearch(root: TreeNode | null): number[][] {
-  const output: number[][] = [];
+export function breadthFirstSearch<T>(root: TreeNode<T> | null): T[][] {
+  const output: T[][] = [];
   let level = 0;
-  const rootsQueue = new Queue<TreeNode>();
+  const rootsQueue = new Queue<TreeNode<T>>();
   if (root) rootsQueue.enQueue(root);
   while (!rootsQueue.isEmpty()) {
     output.push([]);
