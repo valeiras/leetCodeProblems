@@ -1,5 +1,5 @@
 import { TreeNode } from "./TreeNode";
-import { Queue } from "../Queues/Queue";
+import { Queue } from "../Queue/Queue";
 export function createNodesFromArray(arr: (number | null)[]): TreeNode | null {
   if (arr.length === 0) return null;
   const root = new TreeNode(arr[0]);

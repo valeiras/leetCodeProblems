@@ -1,4 +1,4 @@
-import { Queue } from "../Queues/Queue";
+import { Queue } from "../Queue/Queue";
 import { TreeNode } from "./TreeNode";
 
 export function breadthFirstSearch(root: TreeNode | null): number[][] {

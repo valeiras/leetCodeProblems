@@ -1,4 +1,4 @@
-import { Queue } from "./Queue";
+import { Queue } from "../Queue";
 
 export function numIslands(grid: string[][]): number {
   if (grid.length == 0 || grid[0].length == 0) return 0;

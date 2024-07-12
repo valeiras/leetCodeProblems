@@ -20,8 +20,15 @@ export class Queue<T> {
     return true;
   }
 
-  front(): T {
+  front(): T | null {
+    if (this.isEmpty()) return null;
     return this.data[this.head];
+  }
+
+  getFrontAndDequeue(): T {
+    const front = this.front();
+    this.deQueue();
+    return front;
   }
 
   isEmpty(): boolean {
